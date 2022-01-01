@@ -648,15 +648,13 @@ def main():
     
     battle(plr, slime)
     
-    for i in range(4):
+    for i in range(40):
         battle(plr, random.choice(level_1_enemies))
         
-    while True:
-        if random.randint(1, 10) == 1:
+        if random.randint(1, 15) == 1:
             battle(plr, kingzombie)
-        else:
             battle(plr, random.choice(level_1_enemies))
 
 if __name__ == "__main__":
     main()
-print('the end
+print('the end')
